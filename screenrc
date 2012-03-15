@@ -1,0 +1,29 @@
+vbell off
+startup_message off
+hardstatus alwayslastline
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+#hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m-%d %C%a "
+# hardstatus alwayslastline
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+#caption always
+# caption string "%{= kB}%-Lw%{=s kB}%50>%n%f* %t %{-}%+Lw%<"
+#caption always "%?%F%{-b 4w}%:%{-b bb}%? %H | %l | %m-%d %c |%?%F%{-b 4w}%?%L=%-Lw%45>%{-b w4}%n%f* %t%{-}%+Lw%-0<"
+# open programs with escape plus the binding; also names tab
+# bind m screen -t 'Mutt' 7 mutt
+# bind s screen -t 'Snownews' 7 snownews
+############ some key bind ##############
+bindkey "^[`" select 0 
+bindkey "^[1" select 1  ## alt+1 switch window 1
+bindkey "^[2" select 2 
+bindkey "^[3" select 3
+bindkey "^[4" select 4
+bindkey "^[5" select 5
+bindkey "^[^T" screen   ### ctrl+alt+t creen a new window
+bindkey "^[n" next
+bindkey "^[p" prev
+ 
+escape ^]] ##  ctrl+] call meta 
+maptimeout 0
+defc1 off
+altscreen on
