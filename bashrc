@@ -27,3 +27,5 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[01;32m'
 ####################################
 export PATH='/auto/CHS-CCSP/peli3/apps/klocwork/bin/':$PATH
+
+fefeffgfojrigjorgjprgprpgrg
